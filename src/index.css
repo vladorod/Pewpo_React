@@ -1,14 +1,330 @@
-body {
+
+body { 
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+  background-color: black;
+  font-family: Segoe UI;
+  }
+  .menu {
+      width: 100%;
+      background: #2A2A2A;
+      height: 77px;
+      position: fixed;
+      z-index: 5;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.6%;
+  }
+  
+  li {
+      margin: 11px 54px 0 0;
+      list-style: none;
+      color: white;
+      text-transform: uppercase;
+      font-family: Segoe UI light;
+      font-size: 18px;
+      cursor: pointer;
+      position: relative;
+  }
+      
+  li::before {
+      content: '';
+      display: none;
+      background: white;
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      top: 44px;
+      transition: 0.3s ease all;
+  }
+  li:hover::before { 
+  display: block;
+  }
+  .menu-list {
+      
+  }
+  
+  .logo {
+      margin: 10px 90px 0 0;
+  }
+  
+  .slider {
+      padding: 60px 0 0 0;
+      z-index: 0;
+      overflow: hidden;
+      position: relative;
+      
+  }
+  
+  .subscribe {
+      width: 100%;
+      height: 920px;
+      color: white;
+      z-index: 1px;
+  }
+  
+  
+  
+   
+  button {
+      width: 200px;
+      height: 60px;
+      background: rgba(0, 0, 0, 0);
+      border-radius: 4px;
+      color: white;
+      font-family: Segoe UI;
+      font-weight: 300;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+  }
+  
+  button::-ms-value { 
+  padding: 100px;
+  }
+  
+  .Absolute-Center 
+  {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  
+  button:active {
+      background: white;
+      color: black;
+  }
+  
+  
+  .subscribe-textBox {
+      position: absolute;
+      text-align: center;
+      padding-top: 260px;
+      margin: 0px;
+      z-index: 1;
+      text-transform: uppercase;
+     
+  }
+  
+  
+  .reg {
+      font-weight: 100;
+  }
+  
+  .subscribe-bg {
+      z-index: 0;
+  }
+  
+  .slider-content {
+      margin-top: 100px;
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 920px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+  }
+  
+  .content-desc {
+      width: 650px;
+      height: 430px;
+      margin-top: 60px;
+  }
+  
+  /* Button 1 */
+  /* CSS rules are kept repetitive so that you can get CSS rules for each button easily :) */
+  
+  *
+  {
+      user-select: none;
+      -webkit-tap-highlight-color:transparent;
+  }
+  
+  *:focus
+  {
+      outline: none;
+  }
+  
+  
+  #app-cover
+  {
+      display: table;
+      width: 600px;
+      margin: 80px auto;
+      counter-reset: button-counter;
+  }
+  
+  .row
+  {
+      display: table-row;
+  }
+  
+  .toggle-button-cover
+  {
+      display: table-cell;
+      position: relative;
+      width: 200px;
+      height: 140px;
+      box-sizing: border-box;
+  }
+  
+  .button-cover
+  {
+      margin: 10px;
+      background-color: #fff;
+      box-shadow: 0 3px 0 #e7efef;
+  }
+  
+  .button-cover:before
+  {
+      counter-increment: button-counter;
+      content: counter(button-counter);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: red;
+      font-size: 12px;
+      line-height: 1;
+      padding: 5px;
+  }
+  
+  .button-cover, .knobs, .layer
+  {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  }
+  
+  .button
+  {
+      position: relative;
+      top: 50%;
+      width: 74px;
+      height: 36px;
+      margin: 12px 0px 0px 12px;
+      overflow: hidden;
+  }
+  
+  .button.r, .button.r .layer
+  {
+      border-radius: 100px;
+  }
+  
+  .button.b2
+  {
+      border-radius: 2px;
+  }
+  
+  .checkbox
+  {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 3;
+  }
+  
+  .knobs
+  {
+      z-index: 2;
+  }
+  
+  .layer
+  {
+      width: 100%;
+      background-color: #ebf7fc;
+      transition: 0.3s ease all;
+      z-index: 1;
+      opacity: 0.1;
+    
+  }
+  
+  /* Button 1 */
+  #button-1 .knobs:before
+  {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 20px;
+      height: 10px;
+      font-size: 10px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1;
+      padding: 9px 4px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+  }
+  
+  #button-1 .checkbox:active + .knobs:before
+  {
+      width: 46px;
+      border-radius: 100px;
+  }
+  
+  #button-1 .checkbox:checked:active + .knobs:before
+  {
+      margin-left: -26px;
+  }
+  
+  #button-1 .checkbox:checked + .knobs:before
+  {
+      content: '';
+      left: 42px;
+      background-color: #ffffff;
+  }
+  
+  #button-1 .checkbox:checked ~ .layer
+  {
+      background-color: #ffffff;
+  }
+  .search-bar::placeholder { /* Chrome/Opera/Safari */
+      background: black;
+      color: #656565;
+    }
+  .search { 
+      background: black;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      z-index: 6;
+      transition: 0.3s ease all, left 0.3s cubic-bezier(0.42, 0, 0.29, 1.44);
+      align-items: left;
+      top: 10px;
+      font-size: 70px;
+      display: flex;
+  }
+  .search-bar { 
+      background: black;
+      color: white;
+      font-size: 30px;
+      text-transform: uppercase;
+      width: 670px;
+      margin: 0px 0px 0px 71px;
+      border: none;
+      font-weight: 700;
+  }
+  
+  .stick {
+      content: '';
+      display: block;
+      background: white;
+      position: absolute;
+      width: 735px;
+      height: 1px;
+      top: 70px;
+      right: 670px;
+  }

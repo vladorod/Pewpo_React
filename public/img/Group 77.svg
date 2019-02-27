@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2299.25 104.509 470.142 52.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eee;
+        opacity: 0.12;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_77" data-name="Group 77" transform="translate(-2299.25 104.509)">
+    <path id="Path_34" data-name="Path 34" class="cls-1" d="M6.078,0H393.036a6.024,6.024,0,0,1,6.078,5.968,6.024,6.024,0,0,1-6.078,5.968H6.078A6.024,6.024,0,0,1,0,5.968,6.024,6.024,0,0,1,6.078,0Z" transform="translate(71.028 20.779)"/>
+    <rect id="Rectangle_32" data-name="Rectangle 32" class="cls-2" width="232.758" height="11.936" rx="5.968" transform="translate(71.028 20.779)"/>
+    <g id="baseline-whatshot-24px" transform="translate(0 0)">
+      <path id="Path_67" data-name="Path 67" class="cls-2" d="M24.825.67a47.114,47.114,0,0,1,1.622,10.522c0,4.516-2.959,8.176-7.475,8.176a7.979,7.979,0,0,1-7.957-8.176l.066-.789A30.181,30.181,0,0,0,4,29.89a17.537,17.537,0,1,0,35.073,0A37.517,37.517,0,0,0,24.825.67ZM20.9,40.851a6.962,6.962,0,0,1-7.058-6.883c0-3.551,2.3-6.05,6.16-6.839,3.88-.789,7.891-2.652,10.127-5.656a30.587,30.587,0,0,1,1.293,8.856A10.525,10.525,0,0,1,20.9,40.851Z" transform="translate(4.768 0.799)"/>
+      <path id="Path_68" data-name="Path 68" class="cls-3" d="M0,0H52.61V52.61H0Z"/>
+    </g>
+  </g>
+</svg>
