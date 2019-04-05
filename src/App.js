@@ -23,7 +23,7 @@ state = {
     return (
       <div className="App">
        <NavBar updateTeam={this.updateTeam} updateData={this.updateData}/>
-       <Slider team={this.state.team} data={DB.post1}/>
+       <Slider team={this.state.team} data={DB.post2}/>
       </div>
     );
   }
